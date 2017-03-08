@@ -30,7 +30,7 @@ void draw() {
    name[i] = letters[floor(random(letters.length))];
  }
  
- text(new String(name), 0, 39);
+ text(new String(name), 0, 28);
  
  // exit the sketch after drawing PDF 
  exit(); 
