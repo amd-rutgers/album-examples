@@ -12,17 +12,27 @@ void setup() {
 }
 
 void draw() {
+ // this will be the amplitude (height) of our waves
  float amp = 10;
-
- translate(100, 80);
  
- for(int i=0; i<350; i = i+10) {
+ // move our starting point down 100px and over 150px
+ translate(150, 100);
+ 
+ // we're using this double for loop to cycle through
+ // both the x AND y coordinates. think of the screen
+ // as a series of rows of pixels. we're starting at
+ // the top-left, going all the way across the top row.
+ // then moving down a row and starting at the left
+ // again...
+ 
+ 
+ // in this case we start with y values
+ for(int y=0; y<300; y = y+5) {
    beginShape();
-   for(int j=0; j<300; j++) {
-     //amp = abs(j-150);
-     amp = abs(j - 150);
-     amp = map(amp, 0, 150, 40, 0);
-     vertex(j, i-noise(j*.1, i*.1)*amp);
+   for(int x=0; x<200; x++) {
+     amp = abs(x - 100);
+     amp = map(amp, 0, 100, 40, 0);
+     vertex(x, y-noise(x*.1, y*.1)*amp);
    }
    endShape();
  }
