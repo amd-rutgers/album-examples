@@ -22,7 +22,7 @@ The Beatles — _White Album_
 
 Original:
 
-![White Album](white_album/white_album.jpg)
+![White Album](white_album/beatles-white-album.jpg)
 
 Processing version:
 
@@ -37,7 +37,7 @@ Nirvana — _Nirvana_
 
 Original:
 
-![Nirvana](nirvana/nirvana.jpg)
+![Nirvana](nirvana/nirvana-nirvana.jpg)
 
 Processing version:
 
